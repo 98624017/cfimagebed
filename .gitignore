@@ -1,0 +1,17 @@
+node_modules/
+.codex
+.wrangler/
+.wrangler-dist/
+.tmp-bench/
+
+.DS_Store
+
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+docs/private/
+ops/private/
+
+coverage/

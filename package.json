@@ -1,0 +1,11 @@
+{
+  "name": "cfimagebed",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-timeout=60000 \"tests/**/*.test.js\"",
+    "test:strict": "node --test --experimental-test-coverage --test-timeout=60000 --test-coverage-lines=94 --test-coverage-branches=76 --test-coverage-functions=96 \"tests/**/*.test.js\"",
+    "deploy": "node ./scripts/deploy.mjs",
+    "rollout:clients": "node ./scripts/bootstrap-clients.mjs"
+  }
+}

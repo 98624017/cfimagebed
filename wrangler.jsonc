@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cfimagebed",
+  "main": "src/index.js",
+  "workers_dev": true,
+  "compatibility_date": "2026-04-07",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "head_sampling_rate": 1
+    }
+  },
+  "vars": {
+    "UGUU_API_BASE_URL": "https://uguu.se",
+    "R2_PUBLIC_BASE_URL": "https://<your-r2-public-domain>",
+    "R2_PREVIEW_PUBLIC_BASE_URL": "https://<your-preview-r2-public-domain>",
+    "R2_OBJECT_PREFIX": "",
+    "UPLOAD_CACHE_TTL_SECONDS": "0"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "IMAGEBED_KV",
+      "id": "079034e1bd204fd4b528d00d434a7541",
+      "preview_id": "acd56935b5a646ec9beee5d2d05a8c18"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "IMAGEBED_R2",
+      "bucket_name": "cfimagebed-prod",
+      "preview_bucket_name": "cfimagebed-preview"
+    }
+  ]
+}

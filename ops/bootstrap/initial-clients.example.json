@@ -1,0 +1,24 @@
+[
+  {
+    "client_id": "cl_partner_a_prod_01",
+    "name": "Partner A 客户端",
+    "remark": "示例灰度 client",
+    "status": "active",
+    "allow_auto_register": true,
+    "rate_limit": {
+      "per_minute": 30,
+      "per_hour": 600
+    }
+  },
+  {
+    "client_id": "cl_partner_b_prod_01",
+    "name": "Partner B 客户端",
+    "remark": "示例标准 client",
+    "status": "active",
+    "allow_auto_register": true,
+    "rate_limit": {
+      "per_minute": 60,
+      "per_hour": 1500
+    }
+  }
+]
